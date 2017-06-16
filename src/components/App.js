@@ -4,7 +4,6 @@ export class App extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { text: '' };
         this.setText = this.setText.bind(this);
         this.submit = this.submit.bind(this);
     }
@@ -16,11 +15,11 @@ export class App extends Component {
     submit() {
         console.log(this.state.text);
     }
-    render() {
+    render(props, { text = '' }) {
         return (
             <div class="app">
                 <form onSubmit={this.submit} action="javascript:">
-                    <input type="text" value={this.state.text} onInput={this.setText} />
+                    <input type="text" value={text} onInput={this.setText} />
                 </form>
                 <pre><code>{JSON.stringify(this.state, null, 2)}</code></pre>
             </div>
