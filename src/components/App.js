@@ -31,14 +31,15 @@ export class App extends Component {
                     loading: false
                 });
             })
+            .catch(err => console.error(err));
     }
-    render() {
+    render(props, state) {
         return (
             <div class="app">
-                {this.state.loading
-                    ? <p>Please wait...</p>
-                    : <User name={this.state.user.name}
-                            image={this.state.user.avatar_url} />
+                {state.loading
+                    ? <p>Please wait... Fetching {props.config.urls.user}</p>
+                    : <User name={state.user.name}
+                            image={state.user.avatar_url} />
                 }
 
             </div>
