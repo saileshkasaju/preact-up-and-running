@@ -35,4 +35,4 @@ module.exports = {
 		compress: true,
 		historyApiFallback: true
 	}
-}
+};
