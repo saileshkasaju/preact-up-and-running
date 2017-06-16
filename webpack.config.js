@@ -19,7 +19,7 @@ module.exports = {
 				options: {
 					presets: ['env'],
 					plugins: [
-						['transform-react-jsx', { pargma: 'h' }]
+						['transform-react-jsx', { "pragma": 'h' }]
 					]
 				}
 			}

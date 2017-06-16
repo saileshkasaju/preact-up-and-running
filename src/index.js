@@ -1,1 +1,6 @@
-console.log('hello i am here at index.js');
+console.log('test');
+
+import { h, render } from 'preact';
+import App from './components/App';
+
+render(<App />, document.querySelector('main'));
