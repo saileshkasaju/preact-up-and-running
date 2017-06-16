@@ -6,10 +6,18 @@
 </head>
 <body>
 <main>
-    <div class="app">
-        <h1>Hello World!</h1>
-    </div>
 </main>
-<script src="bundle.js"></script>
+<script>
+    const app = document.createElement('div');
+    app.classList.add('app');
+
+    const header = document.createElement('h1');
+    header.textContent = 'Hello world!';
+
+    app.appendChild(header);
+
+    document.querySelector('main')
+        .appendChild(app);
+</script>
 </body>
 </html>
