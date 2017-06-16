@@ -1,12 +1,8 @@
-console.log('test');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+import './index.css';
 
-import { h, render } from 'preact';
-import App from './components/App';
-
-const config = {
-    urls: {
-        user: 'https://api.github.com/users/saileshkasaju'
-    }
-};
-
-render(<App config={config} />, document.querySelector('main'));
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
