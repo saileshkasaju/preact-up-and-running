@@ -23,7 +23,7 @@ export class App extends Component {
     }
 
     componentDidMount() {
-        fetch('https://api.github.com/users/saileshkasaju')
+        fetch(this.props.config.urls.user)
             .then(res => res.json())
             .then(user => {
                 this.setState({
