@@ -14,5 +14,5 @@ export default function Home() {
                    onSearch={e => search(e.target.value)}
             />
         </section>
-    )
+    );
 }

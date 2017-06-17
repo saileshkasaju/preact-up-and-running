@@ -1,6 +1,3 @@
-/**
- * Created by Edge on 6/16/2017.
- */
 import { h } from 'preact';
 
 export function User(props) {
@@ -11,7 +8,7 @@ export function User(props) {
             </figure>
             <p class="user__name">{props.name}</p>
         </div>
-    )
+    );
 }
 
 export default User;
