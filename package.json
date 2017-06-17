@@ -13,7 +13,10 @@
   "dependencies": {
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
+    "preact-redux": "^2.0.1",
     "preact-router": "^2.5.2",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.0",
+    "redux-thunk": "^2.2.0"
   }
 }
