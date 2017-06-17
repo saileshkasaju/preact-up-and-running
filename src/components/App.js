@@ -2,6 +2,7 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 import Home from './Home';
 import Profile from './Profile';
+import Error from './Error';
 
 export class App extends Component {
     render() {
@@ -10,6 +11,7 @@ export class App extends Component {
                 <Router>
                     <Home path="/" />
                     <Profile path="/profile/:user" />
+                    <Error default />
                 </Router>
             </div>
         );
