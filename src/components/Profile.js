@@ -11,7 +11,8 @@ export class Profile extends Component {
         }
     }
     componentDidMount() {
-        fetch(`https://api.github.com/users/${this.props.user}`)
+        const username = this.props.match.params.user;
+        fetch(`https://api.github.com/users/${username}`)
             .then(res => res.json())
             .then(user => {
                 this.setState({
